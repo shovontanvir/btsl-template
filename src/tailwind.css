@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/blacker-display?styles=46885,46884,46880,46881,46882,46883,46874,46875,46876,46877,46878,46879');
+@import url(https://db.onlinewebfonts.com/c/741d2f5de06a63ebff74c1d3d09ccad4?family=Blacker+Display+Regular);
+@import url('https://fonts.cdnfonts.com/css/bodoni');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Home circle loop */
+/* .circle 
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+.logo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url(src/assets/images/homecircle.png);
+    background-size: cover;
+    border-radius: 50%;
+
+}
+.text{
+    width: 100%;
+    height: 100%;
+}
+
+
+  /* stroke */
+  .stroketext {
+    color: black;
+    -webkit-text-fill-color: #225FA9; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+    
+  }
+  .stroketextawardswhite {
+    color: black;
+    -webkit-text-fill-color:transparent ; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+    animation: my-animation 0.5s;
+    font-weight: 700;
+  }
+  .stroketextawardsdark {
+    color: black;
+    -webkit-text-fill-color:transparent ; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    font-weight: 700;
+  }
+  .stroketextawardswhite:hover {
+    -webkit-text-fill-color:#fff ;
+  }
+  .stroketextawardsdark:hover {
+    -webkit-text-fill-color: #000;
+  }
+  /* loop slider */
+.loopslider {
+    margin:  auto;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .loopslider infinity {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 50s linear infinite;
+    
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  /* end of loop slider */
+
+  /* custom cursor */
+  .selectingcolor{
+    color:rgb(34, 95, 169)
+  }
+  html {
+    --cursor-color: #606060
+  }
+  
+  html.dark-mode {
+    --cursor-color: #fff
+  }
+
+  /* box shadow */
+  .box1 {
+    box-shadow: 10px 10px #225FA9;
+  }
+  .box2 {
+    box-shadow: -10px 10px  #225FA9;
+  }
+  .box3 {
+    box-shadow: 10px 10px #225FA9;
+  }
+   
+ /* CircleTextAnimation.css */
+
+.circle-animation {
+  position: relative;
+  width: 200px; /* Adjust the size of the circle */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: url(src/assets/images/homecircle.png);
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #333;
+  animation: rotateCircle 10s linear infinite;
+}
+
+.rotate {
+  position: absolute;
+  white-space: nowrap;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 110px;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Expandable cards */
+
+.ecard{
+  max-width: 500px;
+  max-height: 1000px;
+  transition: max-width 0.5s ease-in-out;
+}
+.ecard:hover{
+  max-width: 1000px;
+}
