@@ -1023,34 +1023,34 @@ video {
   --tw-bg-opacity: 0.9;
 }
 .bg-blackbg{
-  background-image:  url('src/assets/images/awardprojectdbg.png') ;
+  background-image:  url('/images/awardprojectdbg.png') ;
 }
 .bg-blogpagelight{
-  background-image:  url('src/assets/images/blogbgw.png') ;
+  background-image:  url('/images/blogbgw.png') ;
 }
 .bg-darkhb{
-  background-image:  url('src/assets/images/darkbg.png') ;
+  background-image:  url('/images/darkbg.png') ;
 }
 .bg-footerbgdark{
-  background-image:  url('src/assets/images/footerbbg.png') ;
+  background-image:  url('/images/footerbbg.png') ;
 }
 .bg-footerbglight{
-  background-image:  url('src/assets/images/footerlbg.jpg') ;
+  background-image:  url('/images/footerlbg.jpg') ;
 }
 .bg-lightbg{
-  background-image:  url('src/assets/images/awardprojectdlbg.jpg') ;
+  background-image:  url('/images/awardprojectdlbg.jpg') ;
 }
 .bg-productbg{
-  background-image:  url('src/assets/images/productbg.png') ;
+  background-image:  url('/images/productbg.png') ;
 }
 .bg-servicebgdark{
-  background-image: url('src/assets/images/servicebgdark.png');
+  background-image: url('/images/servicebgdark.png');
 }
 .bg-servicebglight{
-  background-image: url('src/assets/images/servicebglight.jpg');
+  background-image: url('/images/servicebglight.jpg');
 }
 .bg-whitehb{
-  background-image:  url('src/assets/images/lightbg.png') ;
+  background-image:  url('/images/lightbg.png') ;
 }
 .bg-cover{
   background-size: cover;
@@ -1651,7 +1651,7 @@ video {
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 :is(.dark .dark\:bg-blogpagedark){
-  background-image:  url('src/assets/images/blogbgb.png') ;
+  background-image:  url('/images/blogbgb.png') ;
 }
 :is(.dark .dark\:bg-repeat){
   background-repeat: repeat;
